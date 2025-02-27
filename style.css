@@ -11,6 +11,13 @@ body{
     background-color: rgb(247, 247, 230);
 }
 
+.logo-img {
+    height: auto; /* Mantém a proporção */
+    display: block; /* Garante que as margens funcionem corretamente */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding-left: 20px; /* Mantém o espaçamento à esquerda se necessário */
+}
+
 header a{
     color: #000;
     text-decoration: none;
@@ -34,7 +41,18 @@ header nav ul li{
 }
 
 img{
-    height: 650px;
-    width: 500px;
-    border-radius: 13px;
+    height: 550px;
+    width: 400px;
+    border-radius: 10px;
+    margin-right: 70px; /* Espaço à direita */
 }
+
+section{
+    margin-left: 100px; /* Espaço à direita */
+    margin-right: 100px; /* Espaço à direita */
+}
+
+section p{
+    font-size: 20px;
+}
+
