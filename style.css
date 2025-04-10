@@ -25,8 +25,7 @@ html {
     height: auto; /* Mantém a proporção */
     display: block; /* Garante que as margens funcionem corretamente */
     margin: 0 auto; /* Centraliza horizontalmente */
-    padding-left: 20px; /* Mantém o espaçamento à esquerda se necessário */
-    max-width: 250px; /* Ajuste conforme necessário */
+    max-width: 220px; /* Ajuste conforme necessário */
     background-color: rgb(247, 247, 230); /* Mantém a aparência */
     width: 100%;
 }
@@ -38,7 +37,7 @@ header {
     width: 100%;
     background-color: rgb(247, 247, 230); /* Mantém a aparência */
     z-index: 1000; /* Garante que fique acima do conteúdo */
-    padding: 10px 0;
+    padding: 8px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Pequeno sombreamento para destaque */
 }
 
@@ -151,3 +150,56 @@ section p{
     border-radius: 5px; /* Borda arredondada para um visual mais suave */
 }
 
+@media screen and (max-width: 1024px) {
+    .flex{
+        flex-direction: column;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+     
+    section{
+        margin-left: 1px; /* Espaço à direita */
+        margin-right: 50px; /* Espaço à direita */
+        text-align: justify;
+    }
+
+    .logo-img {
+        height: auto; /* Mantém a proporção */
+        max-width: 270px; /* Ajuste conforme necessário */
+        background-color: rgb(247, 247, 230); /* Mantém a aparência */
+        width: 100%;
+    }
+
+    .imagem-duda img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .btn-contato{
+        display: block;
+        margin: 0 auto;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    .separator {
+        width: 90%;
+    }
+
+    section .contatos{
+        margin-left: auto;
+    margin-right: auto;
+    }
+
+    header {
+        top: -5px; /* Ajuste para não colidir com a logo */
+    }
+
+    .numero{
+        font-size: 2px;
+    }
+}
