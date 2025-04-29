@@ -48,7 +48,6 @@ header a{
     display: inline-block;
     font-size: 18px;
     transition: .4s;
-    
 }
 
 header a:hover{
@@ -69,7 +68,6 @@ img{
     height: 450px;
     width: 320px;
     border-radius: 10px;
- 
 }
 
 section{
@@ -150,7 +148,7 @@ section p{
     border-radius: 5px; /* Borda arredondada para um visual mais suave */
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) { /*Celulares*/
     .flex{
         flex-direction: column;
     }
@@ -166,15 +164,14 @@ section p{
     }
 
     .logo-img {
-        height: auto; /* Mantém a proporção */
-        max-width: 270px; /* Ajuste conforme necessário */
-        background-color: rgb(247, 247, 230); /* Mantém a aparência */
-        width: 100%;
+        width: 80%; /* opcional: redimensiona para telas menores */
+        max-width: 100%;
+        margin-right: 52px; /* Espaço à direita */
     }
 
     .imagem-duda img {
-        display: block;
-        margin: 0 auto;
+        width: 100%; /* opcional: redimensiona para telas menores */
+        max-width: 100%;
     }
 
     .btn-contato{
@@ -192,14 +189,71 @@ section p{
 
     section .contatos{
         margin-left: auto;
-    margin-right: auto;
+        margin-right: auto;
     }
 
     header {
-        top: -5px; /* Ajuste para não colidir com a logo */
-    }
-
-    .numero{
-        font-size: 2px;
+        top: -6px; /* Ajuste para não colidir com a logo */
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { /*Tablets*/
+    .flex{
+        flex-direction: column;
+    }
+
+    header {
+        top: -6px; /* Ajuste para não colidir com a logo */
+    }
+
+
+    .logo-img {
+        max-width: 45%;
+    }
+    
+    header a{
+        font-size: 22px;
+    }
+
+    section{
+        margin-left: 80px; /* Espaço à direita */
+        margin-right: 100px; /* Espaço à direita */
+        text-align: justify;
+    }
+    
+    section#sobre-mim{
+        margin-left: 30px; /* Espaço à direita */
+        margin-right: 50px; /* Espaço à direita */
+        text-align: justify;
+        padding: 60px;
+    }
+
+    img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .btn-contato{
+        display: block;
+        margin: 0 auto;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    section .contatos{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section p{
+        font-size: 25px;
+    }
+
+    .contato a {
+        font-size: 25px; /* Tamanho da fonte */
+    }
+  }
