@@ -228,6 +228,10 @@ section p{
         padding: 60px;
     }
 
+    section#psicanalise{
+        padding: 40px;
+    }
+
     img{
         display: block;
         margin: 0 auto;
